@@ -1,4 +1,5 @@
 var EventEmitter = require('eventemitter3'),
+    window = require("./browser.js").window,
     _url = require('url'),
     // tests is CORS is supported in XHR, if not we need to use XDR
     useXdr = !!(window.XDomainRequest && !('withCredentials' in (new XMLHttpRequest()))),

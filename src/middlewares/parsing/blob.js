@@ -1,5 +1,6 @@
 var Resource = require('../../Resource'),
-    b64 = require('../../b64');
+    b64 = require('../../b64'),
+    window = require("../../browser.js").window;
 
 window.URL = window.URL || window.webkitURL;
 
